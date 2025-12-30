@@ -17,10 +17,70 @@ main {
   width: 100vw;
 }
 
+.controls {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  width: 100%;
+  margin-top: 100px;
+}
+
+#pokename {
+  vertical-align: middle;
+}
+
 button {
-  border-radius: 100px;
-  height: 30px;
-  width: 30px;
-  background: linear-gradient(red 0% 48%, black 48% 52%, white 52% 100%);
-  font-size: 0.5rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  height: 40px;
+  padding: 6px 10px;
+  background: transparent;
+  border: none;
+}
+
+.pokeball {
+  width: 40px;
+  height: auto;
+}
+
+.img-text {
+  display: inline-block;
+  font-size: 1rem;  
+}
+
+.pokecard {
+  margin-top: 10px;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.displayName {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.img {
+  display: block;
+  width: 120px;
+  height: auto;
+}
+
+.pokeType {
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.statContainer span {
+  display: block;
+  width: auto;
 }

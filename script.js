@@ -29,7 +29,7 @@ saveButton.addEventListener("click", () => {
       // Create and display the Pokémon's name
       const displayName = document.createElement("span");
       displayName.className = "displayName";
-      displayName.textContent = data.species.name;
+      displayName.textContent = `Name: ${data.species.name}`;
 
       // Create and display the Pokémon's sprite image
       const img = document.createElement("img");
@@ -40,7 +40,7 @@ saveButton.addEventListener("click", () => {
       // Create and display the Pokémon's primary type
       const pokeType = document.createElement("span");
       pokeType.className = "pokeType";
-      pokeType.textContent = data.types[0].type.name;
+      pokeType.textContent = `Type: ${data.types[0].type.name}`;
 
       //
       const statOne = document.createElement("span");
@@ -62,7 +62,7 @@ saveButton.addEventListener("click", () => {
       const statContainer = document.createElement("div");
       statContainer.className = "statContainer";
 
-      statContainer.append(statOne, statTwo, statThree, statFour);
+      statContainer.append("Moves: ", statOne, statTwo, statThree, statFour);
 
       // Show all Pokémon info on the card container
       pokeCard.append(displayName, img, pokeType, statContainer);
