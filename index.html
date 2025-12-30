@@ -5,13 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
-    <input type="text" id="pokename" />
-    <button id="submit">Click Me</button>
-    <div id="pokecard"></div>
-
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+        
+    <div class="controls">
+      <input type="text" id="pokename" />
+      <button id="submit">
+        <img src="Images/pokeball-closed.png" alt="closed pokeball" class="pokeball"/>
+        <span class="img-text">Click Me</span>
+      </button>
+    </div>
+    <div id="pokecard" class="pokecard"></div>
+    
     <script src="script.js"></script>
+  
   </body>
 </html>
